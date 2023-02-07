@@ -1,8 +1,10 @@
+from random import sample
+from string import ascii_letters, digits
+
+
 def get_random_password() -> str:
-
-    from random import sample
-    symbols = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-
+    # TODO написать функцию генерации случайных паролей
+    symbols = ascii_letters + digits
     return ''.join(sample(symbols, 8))
 
 
